@@ -20,7 +20,7 @@ bool TcpServer::InitServer(const string& port){
 	serv_sock = socket(PF_INET , SOCK_STREAM , 0);//PF_INET指定网络协议格式 为ipv4，SOCK_STREAM指代的是tcp链接
 	if(serv_sock == -1){
 		cout<<"服务器创建监听套接字失败，socket() error!"<<endl;
-		return false;
+		return false; 
 	}	
  
 	//绑定服务端的socket到相应的网络地址结构中
